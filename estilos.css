@@ -1,0 +1,27 @@
+#Navegador{
+    background-color: #0D6EFD !important;
+    color: black;
+    
+}
+.row{
+    background-color: white;
+    border: 1px solid black;
+  
+    border-color: darkgray;
+
+    
+}
+#tituloCentral{
+    padding: 10px;
+    margin: 20px;
+    color: #878A8E;
+
+}
+
+
+ 
+
+ 
+  .titulo-final {
+    font-size: 20px;
+  }

@@ -1,12 +1,18 @@
 #Navegador{
-    background-color: #0D6EFD !important;
-    color: black;
+    background-color: #1E0540 !important;
+    color: #fff !important ;
     
+}
+
+.navbar-nav a {
+  color: #fff !important;
+}
+.nav-link.active{
+  color: #f2b705;
 }
 .row{
     background-color: white;
-    border: 1px solid black;
-  
+      
     border-color: darkgray;
 
     
@@ -18,10 +24,108 @@
 
 }
 
+#contenedorDatosP{
+  background-color: #f2f2f2;
+  padding: 10px 50px 10px 90px;
 
- 
+}
+#contenedorTabla{
+  background-color: #f2f2f2;
+  padding: 10px 10px 10px 80px;
+}
 
+#tarjeta{
+  background-color: white;
+  
+  margin: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border:none;
+  height: 350px;
+  border-top: 10px solid #f2b705;
+}
+#tarjeta h3{
+  color: #1E0540;
+  font-size: 25px;
+  text-align: center;
+}
+#carrusel h5{
+  font-size: 50px;
+
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: -4px 3px 0 #f2b705;
+}
+#carruselNomina h5{
+  font-size: 50px;
+
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: -4px 3px 0 #f2b705;
+}
+
+
+#tarjetaCategoria{
+  background-color: white;
+
+  margin: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border:none;
+  height: 350px;
+  border-top: 10px solid #D98989;
+}
+
+#tarjetaCategoria h3{
+  color: #D98989;
+  font-size: 25px;
+  text-align: center;
+}
+
+#Bcalcular{
+  display: inline-block;
+  margin: 0 1175px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 13px 6px 21px -1px rgba(0,0,0,1);
+-moz-box-shadow: 13px 6px 21px -1px rgba(0,0,0,1);
+box-shadow: 13px 6px 21px -1px rgba(0,0,0,1);
  
-  .titulo-final {
-    font-size: 20px;
+}
+#contyenedor{
+  background-color: white;
+  padding: 50px 10px 10px 80px;
+}
+
+#avatar i{
+  color: #f2b705;
+  font-size: 200px;
+}
+ 
+#frm{
+margin-top:10%;
+}
+
+.guardad i{
+  color: #fff;
+}
+
+  #categorias{ 
+    margin: 10%;
   }
+  
+
+  

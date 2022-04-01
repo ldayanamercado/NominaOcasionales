@@ -20,7 +20,7 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
+    </script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
@@ -28,177 +28,161 @@
 
 
 <body>
-  <header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="Navegador">
-      <div class="container-fluid">
-        <a class="nav-link " href="index.html"> Inicio </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="calcular.html"> Calcular Salario </a>
-
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="nomina.html"> Nómina </a>
-
-            </li>
-
-
-          </ul>
+  <div class="container-fluid" id="container">
+    <header class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12" id="Navegador">
+        <div class="container-fluid">
+          <a class="nav-link " href="index.html"> Inicio </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="calcular.html"> Calcular Salario </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="nomina.html"> Nómina </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-md-12" id="titulo">
+        <div>
+          <h4> Calcular Salario Del Docente Ocasional</h4>
         </div>
       </div>
-    </nav>
+    </div>
+    <div class="row" id="contenedorDatosP">
+      <div class="col-md-5" id="tarjeta">
+        <h3>Información Del Docente</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="col-3" id="avatar">
+              <i class="bi bi-person-badge"></i>
+            </div>
+          </div>
+          <div class="col-md-4" id="frm">
+            <label for="exampleInputEmail1" class="form-label"><i class="bi bi-postcard"></i> * Identificación
+            </label>
+            <input type="number" class="form-control" id="Identificación">
 
-  </header>
+            <label for="exampleInputEmail1" class="form-label"><i class="bi bi-person"></i> * Nombre </label>
+            <input type="text" class="form-control" id="Nombre">
+          </div>
 
+        </div>
+      </div>
+      <div class="col-md-6" id="tarjetaCategoria">
 
-  <div class="row">
-    <div id="tituloCentral">
-      <h2> Calcular Salario Del Docente Ocasional</h2>
+        <h3>Categoria del docente</h3>
+        <div class="row">
+          <div class="col-md-11">
+            <!-- Categorias-->
+            <div class="row" id="categorias">
+              <div class="col-md-4">
+                <p><i class="bi bi-mortarboard-fill"></i>  Posgrado :</p>
+              </div>
+              <div class="col-md-8">
+                <select class="form-select" id="Bonificacion">
+                  <option selected>Seleccione: </option>
+                  <option value="Especializacion">Especialización</option>
+                  <option value="Maestria">Maestria</option>
+                  <option value="Doctorado">Doctorado</option>
+                  <option value="Postdotorado">Postdotorado</option>
+
+                </select>
+              </div>
+            </div>
+              <!-- Categorias-->
+            <div class="row" id="categorias">
+              <div class="col-md-4">
+                <p><i class="bi bi-x-diamond-fill"></i> Categoria :</p>
+              </div>
+              <div class="col-md-8">
+                <select class="form-select" id="categoria">
+                  <option selected>Seleccione: </option>
+                  <option value="Auxiliar de tiempo completo">Auxiliar de tiempo completo</option>
+                  <option value="Auxiliar de medio tiempo">Auxiliar de medio tiempo</option>
+                  <option value="Asistente de tiempo completo">Asistente de tiempo completo</option>
+                  <option value="Asistente de medio tiempo">Asistente de medio tiempo</option>
+                  <option value="Asociado de tiempo completo">Asociado de tiempo completo</option>
+                  <option value="Asociado de medio tiempo">Asociado de medio tiempo</option>
+                  <option value="Titular de tiempo completo">Titular de tiempo completo</option>
+                  <option value="Titular de medio tiempo">Titular de medio tiempo</option>
+
+                </select>
+              </div>
+            </div>
+              <!-- Categorias-->
+            <div class="row" id="categorias">
+              <div class="col-md-4">
+                <p><i class="bi bi-people-fill"></i>  Grupo :</p>
+              </div>
+
+              <div class="col-md-8">
+                <select class="form-select" id="semilleros">
+                  <option selected>Seleccione: </option>
+                  <option value="A1">A1</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="Reconocidos por colciencias">Reconocidos por colciencias</option>
+                  <option value="Semilleros">Semilleros</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="contButton">
+          <button type="button" class="btn btn-primary" id="Bcalcular" onclick="capturarDatos()"><i class="bi bi-calculator"></i>Primary</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="contenedorTabla">
+      <div class="col-md-12" >
+        <h5><i class="bi bi-people-fill"></i> Listado de docentes</h5>
+        <hr>
+      </div>
+      <div class="col-md-12">
+        <table class="table  table-hover" id="tabla">
+          <thead class="table-light">
+            <tr>
+              <th>Identificacion</th>
+              <th>Nombre </th>
+              <th>Posgrado</th>
+              <th>Categoria </th>
+              <th>Grupo y/o Semillero </th>
+              <th>Salario</th>
+            </tr>
+          </thead>
+          <tbody id="listadoDocentes">
+          </tbody>
+        </table>
+      </div>
     </div>
 
 
-    <div class="row">
-      <div class="row" id="contenedorDatosP">
 
-        <div class="col-md-5" id="tarjeta">
-          <h3>Información Del Docente</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="col-3" id="avatar">
-                <i class="bi bi-person-badge"></i>
-              </div>
-            </div>
-            <div class="col-md-4" id="frm">
-              <label for="exampleInputEmail1" class="form-label"><i class="bi bi-postcard"></i> * Identificación </label>
-              <input type="number" class="form-control" id="Identificación">
 
-              <label for="exampleInputEmail1" class="form-label"><i class="bi bi-person"></i> * Nombre </label>
-              <input type="text" class="form-control" id="Nombre">
-            </div>
-
-          </div>
-        </div>
-        <div class="col-md-6" id="tarjetaCategoria">
-
-          <h3>Categoria del docente</h3>
-          <div class="row">
-            <div class="col-md-8">
-              <!-- Categorias-->
-              <div class="row" id="categorias">
-                <div class="col-5">
-                  <p><i class="bi bi-mortarboard-fill"></i> Posgrado :</p>
-                </div>
-                <div class="col-md-7">
-                  <select class="form-select" id="Bonificacion">
-                    <option selected>Opciones: </option>
-                    <option value="Especializacion">Especialización</option>
-                    <option value="Maestria">Maestria</option>
-                    <option value="Doctorado">Doctorado</option>
-                    <option value="Postdotorado">Postdotorado</option>
-
-                  </select>
-                </div>
-              </div>
-
-              <div class="row" id="categorias">
-                <div class="col-5">
-                  <p><i class="bi bi-x-diamond-fill"></i>Categoria:</p>
-                </div>
-                <div class="col-md-7">
-                  <select class="form-select" id="categoria">
-                    <option selected>Opciones: </option>
-                    <option value="Auxiliar de tiempo completo">Auxiliar de tiempo completo</option>
-                    <option value="Auxiliar de medio tiempo">Auxiliar de medio tiempo</option>
-                    <option value="Asistente de tiempo completo">Asistente de tiempo completo</option>
-                    <option value="Asistente de medio tiempo">Asistente de medio tiempo</option>
-                    <option value="Asociado de tiempo completo">Asociado de tiempo completo</option>
-                    <option value="Asociado de medio tiempo">Asociado de medio tiempo</option>
-                    <option value="Titular de tiempo completo">Titular de tiempo completo</option>
-                    <option value="Titular de medio tiempo">Titular de medio tiempo</option>
-
-                  </select>
-                </div>
-              </div>
-
-              <div class="row" id="categorias">
-                <div class="col-5">
-                  <p><i class="bi bi-people-fill"></i> Grupo:</p>
-                </div>
-
-                <div class="col-md-7">
-                  <select class="form-select" id="semilleros">
-                    <option selected>Seleccione: </option>
-                    <option value="A1">A1</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="Reconocidos por colciencias">Reconocidos por colciencias</option>
-                    <option value="Semilleros">Semilleros</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-
-      </div>
-      <div class="col-md-12">
-        <div class="col-md-6">
-  
-          <button type="button" class="btn btn-primary btn-lg" id="Bcalcular" onclick="capturarDatos()"><i class="bi bi-calculator"></i> Calcular</button>
-        </div>
-      </div>
-      
-
-    
-      
-     
-      
-            <div class="col-md-12">
-              <table class="table table-striped table-hover">
-                <thead class="table-light">
-                  <tr>
-                    <th>Identificacion</th>
-                    <th>Nombre </th>
-                    <th>Posgrado</th>
-                    <th>Categoria </th>
-                    <th>Grupo y/o Semillero </th>
-                    <th>Salario</th>
-                  </tr>
-                </thead>
-                <tbody id="listadoDocentes">
-                </tbody>
-              </table>
-            </div>
-       
-
-      <footer>
-        <div id="tituloCentral">
-          <br>
-          <br>
-          <br>
-          <br>
-          <h2> Unicesar || Laura Dayana Mercado Cañizares</h2>
-        </div>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
       </script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
       </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
       </script>
 
-      <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

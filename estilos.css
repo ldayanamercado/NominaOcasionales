@@ -1,7 +1,23 @@
+body{
+  background-color: #e1e2e4 !important;
+}
 #Navegador{
     background-color: #1E0540 !important;
     color: #fff !important ;
+    margin: 0px 0px 0px 0px !important;
     
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+  width: 97.8% !important;
+}
+
+
+#titulo{
+  background-color: #fff;
+  color: #878A8E;
 }
 
 .navbar-nav a {
@@ -10,23 +26,13 @@
 .nav-link.active{
   color: #f2b705;
 }
-.row{
-    background-color: white;
-      
-    border-color: darkgray;
 
-    
-}
-#tituloCentral{
-    padding: 10px;
-    margin: 20px;
-    color: #878A8E;
 
-}
+
 
 #contenedorDatosP{
-  background-color: #f2f2f2;
-  padding: 10px 20px 10px 90px;
+ 
+padding:10px;
 
 }
 #contenedorTabla{
@@ -36,7 +42,6 @@
 
 #tarjeta{
   background-color: white;
-  
   margin: 20px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
   -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
@@ -50,7 +55,7 @@
   border-top: 10px solid #f2b705;
 }
 #tarjeta h3{
-  color: #1E0540;
+  color: #f2b705;
   font-size: 25px;
   text-align: center;
 }
@@ -86,30 +91,14 @@
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   border:none;
-  height: 350px;
-  border-top: 10px solid #D98989;
+ 
+  border-top: 10px solid #f2b705;
 }
 
 #tarjetaCategoria h3{
-  color: #D98989;
+  color: #f2b705;
   font-size: 25px;
   text-align: center;
-}
-#registros{
-  margin: 30px;
-  padding: 10px;
-  color: #D98989;
-  font-size: 25px;
-  text-align: center;
-  border-top: 10px solid #D98989;
-
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
-  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
-
-    border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
 }
 #nomina{
   margin: 30px;
@@ -145,11 +134,12 @@ text-align: center ;
 
 #Bcalcular{
   display: inline-block;
-  margin: 0 1175px;
+  margin: 0 ;
   border-radius: 10px 10px 10px 10px;
   -webkit-box-shadow: 13px 6px 21px -1px rgba(0,0,0,1);
 -moz-box-shadow: 13px 6px 21px -1px rgba(0,0,0,1);
 box-shadow: 13px 6px 21px -1px rgba(0,0,0,1);
+float: right;
  
 }
 #contyenedor{
@@ -159,7 +149,7 @@ box-shadow: 13px 6px 21px -1px rgba(0,0,0,1);
 
 #avatar i{
   color: #f2b705;
-  font-size: 200px;
+  font-size: 180px;
 }
  
 #frm{
@@ -171,8 +161,127 @@ margin-top:10%;
 }
 
   #categorias{ 
-    margin: 10%;
+    margin: 10px;
   }
   
+  #categorias i{
+    color: #f2b705;
+    font-size: 20px;
+  }
+#tabla{
+  font-size: 15px;
+  background-color: #fff;
+}
+#contenedorTabla{
+  padding: 2%;
 
-  
+}
+
+#contenedorTabla h5{
+  color: #f2b705;
+}
+
+#tabla th{
+  color: #1E0540;
+}
+#esSalario{
+  color: #1E0540;
+  font-weight: 500;
+}
+
+#frm i{
+  color: #f2b705;
+}
+
+#groupTarjetas{
+  margin: 10px;
+  padding: 10px;
+ 
+}
+#grouptablas{
+  background-color: #fff;
+  margin-left: 50px;
+}
+
+#ideTarjeta{
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  color: #f2b705;
+  font-size: 25px;
+  text-align: center;
+  border-top: 10px solid #f2b705;
+  height: 150px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+#ideTarjeta i{
+  color: #f2b705;
+  font-size: 60px;
+}
+#ideTarjeta p{
+  font-size: 20px;
+}
+
+#ideTarjeta2{
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  color: #1E0540;
+  font-size: 25px;
+  text-align: center;
+  border-top: 10px solid #1E0540;
+  height: 150px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+#idtarjeta2 i{
+color: 1E0540;
+}
+
+#ideTarjeta3{
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  color: #249b06;
+  font-size: 25px;
+  text-align: center;
+  border-top: 10px solid #249b06;
+  height: 150px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+#idtarjeta3 i{
+  color: #249b06;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+ background-color: #ecf4ff;
+}
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+ background-color: #fff;
+}
+.table-striped>thead>tr>th {
+   background-color: #fff;
+}
+.table:hover{
+  background-color: #fff !important;
+}

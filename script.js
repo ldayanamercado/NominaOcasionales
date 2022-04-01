@@ -113,7 +113,7 @@ function mostrar(){
         row += '<td>'+ e.bonificacion +'</td>';
         row += '<td>'+ e.categoria +'</td>';
         row += '<td>'+ e.semilleros +'</td>';
-        row += '<td>'+ e.totalSalario +'</td>';
+        row += '<td id="esSalario">'+ '$ '+e.totalSalario +'</td>';
         row += '</tr>';
 
         nomina += e.totalSalario;

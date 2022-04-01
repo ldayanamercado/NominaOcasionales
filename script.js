@@ -41,8 +41,6 @@ function capturarDatos(){
     }else if(categoria=="Asociado de tiempo completo"){
         categoriaT=(smmlv*3.606);
     }else if(categoria=="Asociado de medio tiempo"){
-        categoriaT=(smmlv*3.125);
-    }else if(categoria=="Asistente de tiempo completo"){
         categoriaT=(smmlv*1.990);
     }else if(categoria=="Titular de tiempo completo"){
         categoriaT=(smmlv*3.918);
@@ -100,7 +98,7 @@ function capturarDatos(){
 function mostrar(){
 
     var cantDocente =0;
-
+    var nomina=0;
     var listadoDocentes = localStorage.getItem('listadoDocentes');
     if(!listadoDocentes){
         return false;
@@ -118,11 +116,12 @@ function mostrar(){
         row += '<td>'+ e.totalSalario +'</td>';
         row += '</tr>';
 
+        nomina += e.totalSalario;
+
         
     }
 
     var listadoDocentesTabla = document.getElementById('listadoDocentes');
-
 
     cantDocente = listadoDocentes.length;
     listadoDocentesTabla.innerHTML = row;
@@ -130,9 +129,14 @@ function mostrar(){
     var cantDocentet = document.getElementById('cantDocentet');
     cantDocentet.innerHTML=cantDocente;
     console.log(cantDocente);
-    
+
+    var Totalnomina = document.getElementById('Totalnomina');
+    Totalnomina.innerHTML=nomina;
+    console.log(nomina);
 
 }
+
+
 
 
 function gurdar1(){

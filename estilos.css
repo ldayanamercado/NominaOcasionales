@@ -26,7 +26,7 @@
 
 #contenedorDatosP{
   background-color: #f2f2f2;
-  padding: 10px 50px 10px 90px;
+  padding: 10px 20px 10px 90px;
 
 }
 #contenedorTabla{
@@ -95,6 +95,53 @@
   font-size: 25px;
   text-align: center;
 }
+#registros{
+  margin: 30px;
+  padding: 10px;
+  color: #D98989;
+  font-size: 25px;
+  text-align: center;
+  border-top: 10px solid #D98989;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+#nomina{
+  margin: 30px;
+  padding: 10px;
+  color: #D98989;
+  font-size: 25px;
+  text-align: center;
+  border-top: 10px solid #D98989;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.containernum{
+  border-radius: 16px 16px 16px 16px;
+  -moz-border-radius: 16px 16px 16px 16px;
+  -webkit-border-radius: 16px 16px 16px 16px;
+  border: 0px solid #000000;
+background-color:#1E0540;
+margin: 40px;
+padding:30px;
+text-align: center ;
+
+
+
+}
+
 
 #Bcalcular{
   display: inline-block;

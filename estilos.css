@@ -205,8 +205,8 @@ margin-top:10%;
 
 #ideTarjeta{
   background-color: #fff;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   color: #f2b705;
   font-size: 25px;
   text-align: center;
@@ -227,11 +227,39 @@ margin-top:10%;
 #ideTarjeta p{
   font-size: 20px;
 }
+#ideTarjeta2 p{
+  font-size: 20px;
+}
+#ideTarjeta2 i{
+  color: #1E0540;
+  font-size: 60px;
+}
+#ideTarjeta3 p{
+  font-size: 20px;
+
+}
+#ideTarjeta3 i{
+  color: #249b06;
+  font-size: 60px;
+}
+#ideTarjeta4 p{
+  font-size: 20px;
+
+}
+#ideTarjeta4 i{
+  color: #D98989;
+  font-size: 60px;
+}
+#ideTarjeta5 i{
+  color: #f2b705;
+  font-size: 60px;
+}
+
 
 #ideTarjeta2{
   background-color: #fff;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   color: #1E0540;
   font-size: 25px;
   text-align: center;
@@ -251,8 +279,8 @@ color: 1E0540;
 
 #ideTarjeta3{
   background-color: #fff;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   color: #249b06;
   font-size: 25px;
   text-align: center;
@@ -269,6 +297,48 @@ color: 1E0540;
 
 #idtarjeta3 i{
   color: #249b06;
+}
+#ideTarjeta4{
+  background-color: #fff;
+  margin: 5px;
+  padding: 5px;
+  color: #D98989;
+  font-size: 25px;
+  text-align: center;
+  border-top: 10px solid #D98989;
+  height: 150px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+#idtarjeta4 i{
+  color: #D98989;
+}
+#ideTarjeta5{
+  background-color: #fff;
+  margin: 5px;
+  padding: 5px;
+  color: #f2b705;
+  font-size: 25px;
+  text-align: center;
+  border-top: 10px solid #f2b705;
+  height: 150px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+  box-shadow: 10px 10px 5px 0px rgba(148,145,148,1);
+
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+#idtarjeta4 i{
+  color: #f2b705;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, 

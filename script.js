@@ -76,7 +76,19 @@ function capturarDatos(){
         semilleros:semilleros,
         totalSalario:totalsalario
       }
-         
+      if (identificacion.length==0 || /^\s+$/.test(identificacion) || isNaN(identificacion)){
+        alert("Verifique el Número de Identificación");
+     }else if (nombre.length==0 || /^\s+$/.test(nombre) ){
+        alert("Verifique el Nombre");
+     }else if(bonificacion == "Seleccione"){
+        alert("seleccione un posgrado");
+     }else if(categoria =="Seleccione" ){
+        alert("seleccione una categoria");
+     }else if(semilleros == "Seleccione"){
+        alert("seleccione un grupo ");
+
+     }
+    else {
   
         var listadoDocentes = localStorage.getItem('listadoDocentes');
         if(listadoDocentes){
@@ -93,11 +105,16 @@ function capturarDatos(){
     
 
       mostrar();
+    }
+    console.log("ya");
+    
 }
 
 function mostrar(){
 
     var cantDocente =0;
+    
+
     var nomina=0;
     var listadoDocentes = localStorage.getItem('listadoDocentes');
     if(!listadoDocentes){
@@ -108,6 +125,7 @@ function mostrar(){
     for (let i = 0; i < listadoDocentes.length; i++) {
         const e = listadoDocentes[i];
         row += '<tr>';
+        row += '<td>'+ (i+1) +'</td>';
         row += '<td>'+ e.identificacion +'</td>';
         row += '<td>'+ e.nombre +'</td>';
         row += '<td>'+ e.bonificacion +'</td>';
@@ -117,6 +135,7 @@ function mostrar(){
         row += '</tr>';
 
         nomina += e.totalSalario;
+        
 
         
     }

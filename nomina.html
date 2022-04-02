@@ -17,7 +17,7 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+  </script>
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
@@ -50,7 +50,7 @@
       </nav>
     </header>
 
-      <!-- Titulo --->
+    <!-- Titulo --->
     <div class="row">
       <div class="col-12" id="titulo">
         <div id="tituloCentral">
@@ -59,153 +59,201 @@
       </div>
     </div>
 
-      <!-- Tarjetas--->
+    <!-- Tarjetas--->
 
-      <div class="row" id="contenedorDatosP">
-
-        <div class="col-4" id="groupTarjetas">
-          <div class="row">
-            <div class="col-md-11" id="ideTarjeta">
-              <div class="row">
-                <div class="col-md-3">
-                  <i class="bi bi-people-fill"></i>
-                </div>
-                <div class="col-md-9">
-                  <div class="row">
-                    <h4 id="cantDocentet"></h4>
-                  </div>
-                  <div class="row">
-                    <p>Docentes registrado</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-11" id="ideTarjeta2">
-              <div class="row">
-                <div class="col-md-3">
-                  <i class="bi bi-people-fill"></i>
-                </div>
-                <div class="col-md-9">
-                  <div class="row">
-                    <h4 id="cantDocentet"></h4>
-                  </div>
-                  <div class="row">
-                    <p>Docentes registrado</p>
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-11" id="ideTarjeta3">
-              <div class="row">
-                <div class="col-md-3">
-                  <i class="bi bi-people-fill"></i>
-                </div>
-                <div class="col-md-9">
-                  <div class="row">
-                    <h4 id="cantDocentet"></h4>
-                  </div>
-                  <div class="row">
-                    <p>Docentes registrado</p>
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-          </div>
-        </div>
+    <div class="row" id="contenedorDatosP">
+      <div class="col-md-5">
+        <div class="row" id="groupTarjetas">
         
-        <div class="col-md-7" id="grouptablas">
-          <h3> <i class="bi bi-x-diamond-fill"></i> Categorias</h3>
-          <table class="table table-bordered">
-            <thead class="table-light">
-              <tr>
-                <th>Posgrado</th>
-                <td>Especialización</td>
-                <td>Maestria </td>
-                <td>Doctorado </td>
-                <td>Postdoctorado</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Bonificación mensual S.M.M.L.V </th>
-                <td>0.10</td>
-                <td>0.45</td>
-                <td>0.90</td>
-                <td>0</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="row">
+            <div class="col-md-6" id="ideTarjeta">
+              <div class="row">
+                <div class="col-md-3">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <div class="col-md-9">
+                  <div class="row">
+                    <h1 id="cantDocentet"></h1>
+                  </div>
+                  <div class="row">
+                    <p>Docentes registrado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5" id="ideTarjeta2">
+              <div class="row">
+                <div class="col-md-3">
+                  <i class="bi bi-mortarboard-fill"></i> 
+                </div>
+                <div class="col-md-9">
+                  <div class="row">
+                    <br>
+                    <h4 id="Totalpregrado"></h4>
+                    <br>
+                  </div>
+                  <div class="row">
+                    <p>Total Bono por Posgrados</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5" id="ideTarjeta3">
+              <div class="row">
+                <div class="col-md-3">
+                  <i class="bi bi-x-diamond-fill"></i>
+                </div>
+                <div class="col-md-9">
+                  <div class="row">
+                    <h4 id="TotalCategoria"></h4>
+                    <br>
+                  </div>
+                  <div class="row">
+                    <p>Total Bono Por Categoria</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="col-md-6" id="ideTarjeta4">
+              <div class="row">
+                <div class="col-md-3">
+                  <i class="bi bi-people-fill"></i> 
+                </div>
+                <div class="col-md-9">
+                  <div class="row">
+                    <h4 id="TotalSemilleros"></h4>
+                    <br>
+                  </div>
+                  <div class="row">
+                    <p>Total Bono Por Grupo o Semillero</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11" id="ideTarjeta5">
+              <div class="row">
+                <div class="col-md-3">
+                  <i class="bi bi-calendar3"></i>
+                </div>
+                <div class="col-md-9">
+                  <div class="row">
+                    <br>
+                     <h2  id="Totalnomina"></h2>
+                    <br>
+                    <br>
 
-          <table class="table table-bordered">
-            <thead class="table-light">
-              <tr>
-                <th>Categoria</th>
-                <td>Auxiliar tiempo completo</td>
-                <td>Auxiliar medio tiempo </td>
-                <td>Asistente tiempo completo</td>
-                <td>Asistente medio tiempo </td>
-                <td>Asociado tiempo completo</td>
-                <td>Asociado medio tiempo </td>
-                <td>Titular tiempo completo</td>
-                <td>Titular medio tiempo </td>
-
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th> S.M.M.L.V </th>
-                <td>2.645</td>
-                <td>1.509</td>
-                <td>3.125</td>
-                <td>1.749</td>
-                <td>3.606</td>
-                <td>1.990</td>
-                <td>3.918</td>
-                <td>2.146</td>
-
-              </tr>
-            </tbody>
-          </table>
-
-          <table class="table table-bordered">
-            <thead class="table-light">
-              <tr>
-                <th>Grupo y/o Semillero</th>
-                <td>A1</td>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-                <td>Reconocidos colciencias</td>
-                <td>Semilleros</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Bonificación mensual S.M.M.L.V </th>
-                <td>0.56</td>
-                <td>0.47</td>
-                <td>0.42</td>
-                <td>0.38</td>
-                <td>0.33</td>
-                <td>0.19</td>
-              </tr>
-            </tbody>
-          </table>
-
-
-
+                  </div>
+                  <div class="row">
+                    <p>Total Nomina</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
         </div>
+
       </div>
 
+     
 
-    <!-- Tabla---> <div class="row" id="contenedorTabla">
-      <div class="col-md-12" >
+      
+
+      <div class="col-md-6" id="grouptablas">
+        <h3> <i class="bi bi-x-diamond-fill"></i> Categorias</h3>
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Posgrado</th>
+              <td>Especialización</td>
+              <td>Maestria </td>
+              <td>Doctorado </td>
+              <td>Postdoctorado</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Bonificación mensual S.M.M.L.V </th>
+              <td>0.10</td>
+              <td>0.45</td>
+              <td>0.90</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Categoria</th>
+              <td>Auxiliar tiempo completo</td>
+              <td>Auxiliar medio tiempo </td>
+              <td>Asistente tiempo completo</td>
+              <td>Asistente medio tiempo </td>
+              <td>Asociado tiempo completo</td>
+              <td>Asociado medio tiempo </td>
+              <td>Titular tiempo completo</td>
+              <td>Titular medio tiempo </td>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th> S.M.M.L.V </th>
+              <td>2.645</td>
+              <td>1.509</td>
+              <td>3.125</td>
+              <td>1.749</td>
+              <td>3.606</td>
+              <td>1.990</td>
+              <td>3.918</td>
+              <td>2.146</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Grupo y/o Semillero</th>
+              <td>A1</td>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+              <td>Reconocidos colciencias</td>
+              <td>Semilleros</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Bonificación mensual S.M.M.L.V </th>
+              <td>0.56</td>
+              <td>0.47</td>
+              <td>0.42</td>
+              <td>0.38</td>
+              <td>0.33</td>
+              <td>0.19</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+      </div>
+  </div>
+
+
+    <!-- Tabla--->
+    <div class="row" id="contenedorTabla">
+      <div class="col-md-12">
         <h5><i class="bi bi-people-fill"></i> Listado de docentes</h5>
         <hr>
       </div>
@@ -213,6 +261,7 @@
         <table class="table  table-hover" id="tabla">
           <thead class="table-light">
             <tr>
+              <th>#</th>
               <th>Identificacion</th>
               <th>Nombre </th>
               <th>Posgrado</th>
@@ -227,44 +276,31 @@
       </div>
     </div>
 
-        <div class="col-md-5">
-          <table class="table table-bordered">
-            <thead class="table-light">
-              <tr>
-                <th>Total Nomina :</th>
-                <td id="Totalnomina"> </td>
-
-              </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-          </table>
-     </div>
+   
 
 
-  <footer>
-    <div id="tituloCentral">
-      <br>
-      <br>
-      <br>
-      <br>
-      <h2> Unicesar || Laura Dayana Mercado Cañizares</h2>
-    </div>
-  </footer>
+    <footer>
+      <div id="tituloCentral">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2> Unicesar || Laura Dayana Mercado Cañizares</h2>
+      </div>
+    </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
-  <script src="https://kit.fontawesome.com/01f029716b.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/01f029716b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

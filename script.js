@@ -113,6 +113,14 @@ function capturarDatos(){
 function mostrar(){
 
     var cantDocente =0;
+    var semilleroT =0;
+    var cantSemillero =0;
+    var categoriaT=0;
+    var cantCategoria =0;
+    var cantBonificacion=0;
+    var  bonificacionT=0;
+    var smmlv=1000000;
+
     
 
     var nomina=0;
@@ -135,13 +143,58 @@ function mostrar(){
         row += '</tr>';
 
         nomina += e.totalSalario;
-        
+        // Bonificacion
+      if (e.bonificacion =="Especializacion"){
+        bonificacionT = (smmlv*0.10);
+    }else if (e.bonificacion =="Maestria"){
+        bonificacionT = (smmlv*0.45);
+    }else if (e.bonificacion =="Doctorado"){
+        bonificacionT = (smmlv*0.90);
+    }else if (e.bonificacion =="Postdotorado"){
+        bonificacionT = 0;
+    }
 
-        
+    // categoria 
+    if (e.categoria=="Auxiliar de tiempo completo"){
+        categoriaT=(smmlv*2.645);
+    }else if(e.categoria=="Auxiliar de medio tiempo"){
+        categoriaT=(smmlv*1.509);
+    }else if(e.categoria=="Asistente de tiempo completo"){
+        categoriaT=(smmlv*3.125);
+    }else if(e.categoria=="Asistente de medio tiempo"){
+        categoriaT=(smmlv*1.749);
+    }else if(e.categoria=="Asociado de tiempo completo"){
+        categoriaT=(smmlv*3.606);
+    }else if(e.categoria=="Asociado de medio tiempo"){
+        categoriaT=(smmlv*1.990);
+    }else if(e.categoria=="Titular de tiempo completo"){
+        categoriaT=(smmlv*3.918);
+    }else if(e.categoria=="Titular de medio tiempo"){
+        categoriaT=(smmlv*2.146);
+    }
+   
+     // semillero
+     if(e.semilleros=="A1"){
+        semilleroT=(smmlv*0.56);
+    }else if(e.semilleros=="A"){
+        semilleroT=(smmlv*0.47);
+    }else if(e.semilleros=="B"){
+        semilleroT=(smmlv*0.42);
+    }else if(e.semilleros=="C"){
+        semilleroT=(smmlv*0.38);
+    }else if(e.semilleros=="Reconocidos por colciencias"){
+        semilleroT=(smmlv*0.33);
+    }else if(e.semilleros=="Semilleros"){
+        semilleroT=(smmlv*0.19);
+    }else{
+        semilleroT=0;
+    }
+    cantBonificacion += bonificacionT;
+    cantCategoria += categoriaT;
+    cantSemillero += semilleroT;
     }
 
     var listadoDocentesTabla = document.getElementById('listadoDocentes');
-
     cantDocente = listadoDocentes.length;
     listadoDocentesTabla.innerHTML = row;
 
@@ -152,6 +205,20 @@ function mostrar(){
     var Totalnomina = document.getElementById('Totalnomina');
     Totalnomina.innerHTML=nomina;
     console.log(nomina);
+
+    var Totalpregrado = document.getElementById('Totalpregrado');
+    Totalpregrado.innerHTML=cantBonificacion;
+    console.log(cantBonificacion);
+
+    var TotalCategoria = document.getElementById('TotalCategoria');
+    TotalCategoria.innerHTML=cantCategoria;
+    console.log(cantCategoria);
+
+    var TotalSemilleros = document.getElementById('TotalSemilleros');
+    TotalSemilleros.innerHTML=cantSemillero;
+    console.log(cantSemillero);
+
+
 
 }
 
